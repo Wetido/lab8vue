@@ -7,7 +7,7 @@
     </button>
 
     <button @click="countFibonacciRecursiveHandler">
-      Policz rekurencyjnie. OSTROŻNIE!
+      Policz rekurencyjnie
     </button>
 
     <span v-show="result !== null">Wynik = {{result}}</span>
