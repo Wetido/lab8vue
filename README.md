@@ -1,18 +1,18 @@
-#Technologie
+# Technologie
 ```
 1. NodeJs
 2. VueJs
 3. http-server
 ```
 
-#Niezbędne dependencje:
+# Niezbędne dependencje:
 ```
 RUN npm install -g @vue/cli-service-global
 RUN npm install -g @vue/cli
 RUN npm install http-server -g
 ```
 
-#Uruchomienie projektu lokalnie
+# Uruchomienie projektu lokalnie
 ```
 npm install - instalacja depencencji dodanych w package.json
 npm run build - zbudowanie aplikacji
