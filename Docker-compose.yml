@@ -12,6 +12,7 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
+    command: ["http-server", "dist"]
 
   test:
     stdin_open: true

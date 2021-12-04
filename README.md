@@ -1,27 +1,36 @@
-# lab8vue
-
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
+#Technologie
+```
+1. NodeJs
+2. VueJs
+3. http-server
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+#Niezbędne dependencje:
+```
+RUN npm install -g @vue/cli-service-global
+RUN npm install -g @vue/cli
+RUN npm install http-server -g
+```
+
+#Uruchomienie projektu lokalnie
+```
+npm install - instalacja depencencji dodanych w package.json
+npm run build - zbudowanie aplikacji
+npm run start - uruchomienie aplikacji
+npm run test - uruchomienie testów aplikacji
+```
+
+# Sprawozdanie lab 8
+## Wykonanie:
+1. Utworzenie projektu vue polecenie vue init.
+2. Opracowanie projektu zawierającego rozwiązanie Fibonacciego.
+3. Opracowanie pliku Dockerfile który służącego do stworzenia obrazu zbudowanej aplikacji.
+4. Opracowanie pliku docker-compose.yml pozwalącego na uruchomienie aplikacji na serwerze http i uruchomienie testów.
+5. Utworzenie repozytorium ze zmianami.
+
+## Uruchomienie z pomocą docker
+1. Sklonowanie repozytorium na dysk poleceniem git clone.
+2. Zbudowanie i uruchomienie kontenera przy pomocy polecenia ```docker compose up``` lub polecenia```COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker compose up```
+   (wymagana instalacja docker build kit oraz docker compose wersja 2.).
+3. Aplikacja będzie dostępna na ```http://localhost:8080```.
+4. Wyniki testów będą dostępne w konsoli.

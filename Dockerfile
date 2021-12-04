@@ -12,10 +12,11 @@ RUN npm install http-server -g
 
 RUN chown -R node:node /app
 
+#Zbudowanie aplikacji
 CMD ["npm", "run", "build"]
 
 EXPOSE 8080
-CMD [ "http-server", "dist" ]
+
 
 
 
